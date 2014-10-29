@@ -1,7 +1,8 @@
-<h1>Welcome! Famous-Denver-Boulder!</h1>
+<h1>Famo.us Skier!!!!!</h1>
 
 <fa-app class="full-screen">
 
+<fa-modifier  fa-scale="[1, 1]"  >
   <!-- Container modifier, which we're rotating over the y axis -->
   <fa-modifier fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()">
 
@@ -18,12 +19,24 @@
     </fa-modifier>
   </fa-modifier>
 
+<fa-modifier fa-size="[300, 50]" fa-origin="[.5,.5]" fa-aligin="[0,0]" fa-rotate-z="slopeRad.rad">
+  <fa-surface fa-background-color="'orange'" fa-color="'#fff'">
+      This text should be white.
+  </fa-surface>
+</fa-modifier>
 
-  <fa-modifier fa-origin="[.5, .9]" fa-size="[100, 100]">
+  <fa-modifier fa-origin="[.5, .9]" fa-size="[300, 100]">
     <fa-surface>
       <input style="width: 100%; text-align: center;" type="range" min="10" max="100" ng-model="spinner.speed" />
-          <h1>{{spinner.speed}}</h1>
+          <h1>speed: {{spinner.speed}}</h1>
     </fa-surface>
   </fa-modifier>
-
+  <fa-modifier fa-origin="[.5, 1]" fa-size="[100, 100]">
+    <fa-surface>
+<!--       <input style="width: 100%; text-align: center;" type="range" min="0" max=".90" ng-model="slope.angle" /> -->
+          <input style="width: 100%; text-align: center;" type="text" min="0" max="360" ng-model="slope.angle" ng-change="degToRad()"/>
+          <p>slope: {{slope.angle}}, rad {{slopeRad.rad}}</p>
+    </fa-surface>
+  </fa-modifier>
+</fa-modifier>
 </fa-app>

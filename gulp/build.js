@@ -110,4 +110,4 @@ gulp.task('deploy', function() {
 gulp.task('clear', function(done) {
   return $.cache.clearAll(done);
 });
-gulp.task('build', ['clear', 'haml', 'jade', 'html', 'partials', 'images', 'fonts', 'bowerjs']);
+gulp.task('build', ['clear', 'haml', 'jade', 'html', 'partials', 'images', 'fonts']);

@@ -5,8 +5,21 @@ angular.module('famousAngularStarter')
     var Transitionable = $famous['famous/transitions/Transitionable'];
     var Timer = $famous['famous/utilities/Timer'];
 
+
     $scope.spinner = {
       speed: 55
+    };
+    $scope.slope = {
+      angle: 0
+    };
+
+    $scope.slopeRad = {
+      rad: 0
+    };
+
+    $scope.degToRad = function() {
+      $scope.slopeRad.rad = $scope.slope.angle * 3.14159265359 / 180;
+
     };
     $scope.rotateY = new Transitionable(0);
 

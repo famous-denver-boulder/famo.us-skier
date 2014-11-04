@@ -9,7 +9,7 @@
 <fa-modifier fa-size="[undefined, 500]" fa-origin="[.5,.5]" fa-aligin="[0,0]" fa-rotate-z="slopeRad.rad">
 
     <!-- famous logo spinner -->
-    <fa-modifier fa-origin="[.5, .2]" fa-rotate-y="rotateY.get()">
+    <fa-modifier fa-origin="[.5, .2]" fa-rotate-y="rotateY.get()" >
       <!-- Front face -->
       <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
         <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;"/>
@@ -25,8 +25,8 @@
 
 
   <!-- stickman body -->
-  <fa-modifier fa-origin="[.5, .5]">
-    <fa-surface fa-size="[true, true]">
+  <fa-modifier fa-origin="[.5, .5]" fa-align="align.get()" >
+    <fa-surface fa-size="[true, true]" fa-click="slide()">
       <img src="images/stickman.svg" style="width: 200px; height: 200px;" />
     </fa-surface>
   </fa-modifier>

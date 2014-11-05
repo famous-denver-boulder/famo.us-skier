@@ -9,7 +9,10 @@
 <fa-modifier fa-size="[undefined, 500]" fa-origin="[.5,.5]" fa-aligin="[0,0]" fa-rotate-z="slopeRad.rad">
 
     <!-- famous logo spinner -->
-    <fa-modifier fa-origin="[.5, .2]" fa-rotate-y="rotateY.get()" >
+  <fa-modifier fa-origin="[.5, .5]" fa-align="align.get()" >
+    <!-- <fa-modifier fa-origin="[.5,.5]"> -->
+
+    <fa-modifier fa-origin="[.5, 1]" fa-rotate-y="rotateY.get()" >
       <!-- Front face -->
       <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
         <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;"/>
@@ -22,10 +25,10 @@
         </fa-surface>
       </fa-modifier>
     </fa-modifier>
+  <!-- </fa-modifier> -->
 
+    <!-- stickman body -->
 
-  <!-- stickman body -->
-  <fa-modifier fa-origin="[.5, .5]" fa-align="align.get()" >
     <fa-surface fa-size="[true, true]" fa-click="slide()">
       <img src="images/stickman.svg" style="width: 200px; height: 200px;" />
     </fa-surface>
@@ -39,7 +42,7 @@
   </fa-surface>
   </fa-modifier> -->
   <fa-modifier fa-origin="[0, 1]" fa-align="[-0.5,1.1]">
-    <fa-surface fa-background-color="'white'" fa-color="'#000'"   fa-size="[2000, 200]">
+    <fa-surface fa-background-color="'#ccc'" fa-color="'#000'"   fa-size="[2000, 200]">
     </fa-surface>
   </fa-modifier>
 
@@ -56,7 +59,7 @@
     <fa-surface>
 <!--       <input style="width: 100%; text-align: center;" type="range" min="0" max=".90" ng-model="slope.angle" /> -->
           <input style="width: 100%; text-align: center;" type="range" min="0" max="90" ng-model="slope.angle" ng-change="degToRad()"/>
-          <p>speed: {{spinner.speed}}, slope: {{slope.angle}}, rad {{slopeRad.rad}}</p>
+          <p> head spin: {{spinner.speed}}, slope: {{slope.angle}}, rad {{slopeRad.rad | number:5}}</p>
     </fa-surface>
   </fa-modifier>
 </fa-modifier>

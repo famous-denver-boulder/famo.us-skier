@@ -1,9 +1,10 @@
-famous-angular-starter
+famous-angular-skier
 ======================
 
-Starter repo for Famo.us/Angular
+This is a demo repo for the Famo.us Denver/Boulder meet up group.  It will be a skier on a slope with interactive controls in the end :)
 
-The `master` branch is a viable seed project for Famo.us/Angular.
+It was started with starter repo for Famo.us/Angular
+
 
 ##Running
 

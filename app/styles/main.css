@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: blue;
+    background: url(../images/mtn_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 100px
 }
 
 .center-box {

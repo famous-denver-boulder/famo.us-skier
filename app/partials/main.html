@@ -46,17 +46,17 @@
 
 </fa-modifier>
 
-  <fa-modifier fa-origin="[.5, .9]" fa-size="[300, 100]">
+  <fa-modifier fa-origin="[0.5, 0.8]" fa-size="[300, 50]">
     <fa-surface>
       <input style="width: 100%; text-align: center;" type="range" min="10" max="100" ng-model="spinner.speed" />
-          <h1>speed: {{spinner.speed}}</h1>
+
     </fa-surface>
   </fa-modifier>
-  <fa-modifier fa-origin="[.5, 1]" fa-size="[100, 100]">
+  <fa-modifier fa-origin="[0.5, 0.9]" fa-size="[300, 50]">
     <fa-surface>
 <!--       <input style="width: 100%; text-align: center;" type="range" min="0" max=".90" ng-model="slope.angle" /> -->
           <input style="width: 100%; text-align: center;" type="range" min="0" max="90" ng-model="slope.angle" ng-change="degToRad()"/>
-          <!-- <p>slope: {{slope.angle}}, rad {{slopeRad.rad}}</p> -->
+          <p>speed: {{spinner.speed}}, slope: {{slope.angle}}, rad {{slopeRad.rad}}</p>
     </fa-surface>
   </fa-modifier>
 </fa-modifier>

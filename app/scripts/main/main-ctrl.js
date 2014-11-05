@@ -7,7 +7,7 @@ angular.module('famousAngularStarter')
     var Easing = $famous['famous/transitions/Easing'];
 
 
-    $scope.align = new Transitionable([.5, .5, 0]);
+    $scope.align = new Transitionable([0.5, 0.5, 0]);
 
     $scope.spinner = {
       speed: 55
@@ -29,7 +29,7 @@ angular.module('famousAngularStarter')
     $scope.rotateY = new Transitionable(0);
 
     $scope.slide = function() {
-      $scope.align.set([2, .5, 1], {
+      $scope.align.set([2, 0.5, 1], {
         duration: 5000,
         curve: 'easeInOut'
       });
